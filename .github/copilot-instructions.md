@@ -2,7 +2,9 @@
 
 ## Project Overview
 
-Newgen is a Telltale-style interactive narrative RPG built with Genspark. This is a choice-driven adventure game where player decisions shape the story and determine character fates. The game features branching narratives, character development, multiple endings, and a choice timer system for critical story moments.
+Newgen is a planned Telltale-style interactive narrative RPG to be built with Genspark. This will be a choice-driven adventure game where player decisions shape the story and determine character fates. The game will feature branching narratives, character development, multiple endings, and a choice timer system for critical story moments.
+
+**Current Status**: The project is in early planning stages. The repository currently contains documentation outlining the vision for the game.
 
 ## Target Audience
 
@@ -19,12 +21,21 @@ Newgen is a Telltale-style interactive narrative RPG built with Genspark. This i
 
 ## Project Structure
 
+**Current Structure:**
 ```
 Newgen/
-├── src/           # Source code for game logic
-├── assets/        # Game assets (images, audio, sprites)
-├── stories/       # Story content and branching logic
 ├── .github/       # GitHub configuration and Copilot instructions
+└── README.md      # Project documentation and vision
+```
+
+**Planned Structure:**
+```
+Newgen/
+├── src/           # Source code for game logic (to be created)
+├── assets/        # Game assets (images, audio, sprites) (to be created)
+├── stories/       # Story content and branching logic (to be created)
+├── .github/       # GitHub configuration and Copilot instructions
+├── package.json   # Node.js project configuration (to be created)
 └── README.md      # Project documentation
 ```
 
@@ -35,6 +46,16 @@ Newgen/
 1. Node.js (v14 or higher) must be installed
 2. npm or yarn package manager
 
+### Initial Project Setup
+
+**The project is currently in planning stages.** If you're the first to implement code, consider:
+
+1. Initialize Node.js project: `npm init -y`
+2. Create the directory structure (src/, assets/, stories/)
+3. Install necessary dependencies (Genspark framework and related packages)
+4. Set up build tools and development environment
+5. Update this instructions file with the actual implementation details
+
 ### Installation Steps
 
 ```bash
@@ -42,6 +63,7 @@ Newgen/
 git clone <repository-url>
 cd Newgen
 
+# Once package.json is created:
 # Install dependencies
 npm install
 
@@ -49,38 +71,42 @@ npm install
 npm start
 ```
 
+**Note**: The project is in early stages. When contributing, you may need to initialize the Node.js project structure first if it hasn't been created yet.
+
 ## Building and Testing
+
+**Note**: These commands will be available once the project structure is initialized with package.json.
 
 ### Build Commands
 
 ```bash
-# Install dependencies
+# Install dependencies (once package.json exists)
 npm install
 
 # Start the game in development mode
 npm start
 
-# If build script exists
+# Build the game
 npm run build
 ```
 
 ### Testing Commands
 
 ```bash
-# Run tests (if test suite exists)
+# Run tests (when test suite is implemented)
 npm test
 
-# Run tests in watch mode (if available)
+# Run tests in watch mode
 npm run test:watch
 ```
 
 ### Linting and Formatting
 
 ```bash
-# Run linter (if configured)
+# Run linter (when configured)
 npm run lint
 
-# Format code (if configured)
+# Format code (when configured)
 npm run format
 ```
 
@@ -96,10 +122,12 @@ npm run format
 
 ### File Organization
 
+When creating the project structure:
 - Place game logic in `src/` directory
 - Store story content and branching logic in `stories/` directory
 - Keep all assets (images, audio) in `assets/` directory
 - Maintain clear separation between story content and game mechanics
+- Initialize with a proper package.json for dependency management
 
 ### Story Content
 
@@ -113,10 +141,10 @@ npm run format
 ### Important Files
 
 - **README.md**: Main project documentation - keep up to date with new features
-- **package.json**: Dependencies and scripts - verify compatibility when updating
-- **src/**: Core game logic - ensure changes don't break existing mechanics
-- **stories/**: Narrative content - maintain story consistency and quality
-- **assets/**: Game resources - optimize for performance
+- **package.json**: Dependencies and scripts (to be created) - verify compatibility when updating
+- **src/**: Core game logic (to be created) - ensure changes don't break existing mechanics
+- **stories/**: Narrative content (to be created) - maintain story consistency and quality
+- **assets/**: Game resources (to be created) - optimize for performance
 
 ### Areas to Focus On
 

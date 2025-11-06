@@ -1,12 +1,9 @@
 ---
 # GitHub Copilot Setup Steps for Newgen
 # This file configures the environment setup for GitHub Copilot coding agent
+# Note: Some steps will only work once the project structure is initialized
 
 steps:
-  - name: Install Node.js dependencies
-    run: npm install
-    description: Install all required npm packages for the project
-    
   - name: Verify Node.js version
     run: node --version
     description: Ensure Node.js v14 or higher is available
@@ -14,6 +11,15 @@ steps:
   - name: Check npm version
     run: npm --version
     description: Verify npm package manager is available
+    
+  - name: Install Node.js dependencies
+    run: |
+      if [ -f "package.json" ]; then
+        npm install
+      else
+        echo "No package.json found - project structure not yet initialized"
+      fi
+    description: Install required npm packages if package.json exists
 
 # Optional: Add environment variables if needed
 # env:
