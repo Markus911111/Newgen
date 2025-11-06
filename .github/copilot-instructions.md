@@ -39,7 +39,7 @@ Newgen/
 
 ```bash
 # Clone the repository
-git clone https://github.com/Markus911111/Newgen.git
+git clone <repository-url>
 cd Newgen
 
 # Install dependencies
@@ -181,4 +181,4 @@ This project is licensed under the MIT License.
 
 ## Contact
 
-Project Link: [https://github.com/Markus911111/Newgen](https://github.com/Markus911111/Newgen)
+For questions or issues, please refer to the repository's Issues section.
