@@ -59,8 +59,8 @@ Newgen/
 ### Installation Steps
 
 ```bash
-# Clone the repository
-git clone <repository-url>
+# Clone the repository (replace with actual repository URL)
+git clone [your-repository-url]
 cd Newgen
 
 # Once package.json is created:
