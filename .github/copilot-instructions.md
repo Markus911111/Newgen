@@ -52,6 +52,7 @@ This is an RPG game project with a focus on storytelling and player choices, sim
 ## Current Project State
 
 This project is in early stages. As the codebase grows, this file will be updated with:
+
 - Specific build instructions
 - Testing frameworks and commands
 - Linting and code quality tools
