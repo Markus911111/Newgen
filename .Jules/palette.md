@@ -1,0 +1,3 @@
+## 2024-05-22 - Managing Focus in SPAs
+**Learning:** When content is replaced dynamically (like switching from Start Screen to Game Screen), screen reader users lose context unless focus is explicitly moved to the new content container.
+**Action:** Always use `tabindex="-1"` and `.focus()` on the new container when swapping major views.
